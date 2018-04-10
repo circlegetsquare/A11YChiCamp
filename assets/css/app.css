@@ -148,6 +148,13 @@ a {
 	border-radius: 30px;
 	font-weight: 700;
 }
+
+.btn-nav {
+	height: auto;
+	margin-top: auto;
+ 	margin-bottom: auto;
+}
+
 .btn-info {
 	background-color: #ffffff;
 	border-color: #747474;
