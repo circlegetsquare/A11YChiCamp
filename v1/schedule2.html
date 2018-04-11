@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		<!-- Base meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+		<!-- Descriptive meta -->
+		<title>A11YChi Accessibility Camp</title>
+		<meta name="title" content="max 65 character title">
+		<meta name="description" content="max 165 character description">
+		<meta name="keywords" content="comma, separated, list">
+		<meta name="author" content="author name">
+
+		<!-- CSS assets -->
+		<link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.css" rel="stylesheet">
+
+		<!-- JS assets -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/bootstrap/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="assets/js/jquery.smooth-scroll.min.js"></script>
+		<script src="assets/js/jquery.vide.min.js"></script>
+		<script src="assets/js/jquery.bgswitcher.js"></script>
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Theme specific assets -->
+		<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+		<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+		<script src="assets/js/app.js"></script>		
+
+	</head>
+
+	<body>
+
+		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a>English</a></li>
+							<li><a>French</a></li>
+							<li><a>Spanish</a></li>
+							<li><a>Russian</a></li>
+						</ul>
+					</div> -->
+
+					<!-- Enable the user to adjust the font size of the web page
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+					-->
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a class="btn btn-link secondary">Accessibility</a> | </li>
+							<li><a class="btn btn-link secondary">Contact</a></li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/img/global/a11ychi-logo_bw.png" alt="Home link" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="presenters.html">Presenters</a></li>
+						<li><a>Location</a></li>
+					</ul>
+					<div class="navbar-form navbar-right">
+						<div class="input-group">
+							<a class="btn btn-primary">Register</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="banner home-1" data-type="background" data-speed="4">
+			<div class="banner-interior">
+				<div class="container short">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center">
+							<h1>Schedule</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Begin main page content -->
+		<div class="content" id="main_content">
+			<div class="container">
+				
+				<!-- Secondary headline -->
+				<div class="row pad-top-sm pad-bottom-sm line-bottom">
+					<div class="col-md-8 col-md-offset-2">
+						<h3 class="large" id="schedule">Schedule at a Glance</h2>
+							<p class="text-left">All sessions throughout the day will take place in the White Ballroom on the 2nd floor. Lunch will be in the cafeteria on the 3rd floor. For more details, visit the <a>location page</a>.</p>
+							<table class="table table-striped"> 
+									<thead> 
+										<tr> 
+											<th class="head">Start Time</th> 
+											<th class="head">End Time</th> 
+											<th class="head">Session Topic</th> 
+										</tr> 
+									</thead> 
+									<tbody> 
+										<tr> 
+											<th scope="row">9:00am</th> 
+											<td>9:30am</td> 
+											<td>Registration</td> 
+										</tr> 
+										<tr> 
+											<th scope="row">9:30am</th> 
+											<td>10:00am</td> 
+											<td>Welcome Address</td> 
+
+										</tr> 
+										<tr> 
+											<th scope="row">10:00am</th> 
+											<td>11:00am</td> 
+											<td><a href="#presentation1">Accessibility for Everyone</a></td> 
+										</tr>
+										<tr> 
+											<th scope="row">11:00am</th> 
+											<td>12:00pm</td> 
+											<td><a href="#presentation2">Accessibility Legal Update</a></td> 
+										</tr> 
+										<tr> 
+											<th scope="row">12:00pm</th> 
+											<td>1:00pm</td> 
+											<td>Lunch Break</td> 
+										</tr>
+										<tr> 
+											<th scope="row">1:00pm</th> 
+											<td>2:00pm</td> 
+											<td><a href="#presentation3">Assistive Technology: Beyond Screen Readers</a></td> 
+										</tr> 
+										<tr> 
+											<th scope="row">2:00pm</th> 
+											<td>3:00pm</td> 
+											<td><a href="#presentation4">Mobile Screen Readers 101</a></td> 
+
+										</tr> 
+										<tr> 
+											<th scope="row">3:00pm</th> 
+											<td>3:30pm</td> 
+											<td>Afternoon Break</td> 
+										</tr>
+										<tr> 
+											<th scope="row">3:30pm</th> 
+											<td>4:30pm</td> 
+											<td><a href="#presentation5">Where Does User Experience & Accessibility Meet?</a></td> 
+										</tr> 
+										<tr> 
+											<th scope="row">4:30pm</th> 
+											<td>5:30pm</td> 
+											<td><a href="#presentation6">Good Design Was Always Accessible</a></td> 
+										</tr>
+										<tr> 
+											<th scope="row">5:30pm</th> 
+											<td>6:30pm</td> 
+											<td>Happy Hour and Networking</td> 
+										</tr> 
+									</tbody> 
+								</table>
+					</div>
+				</div>
+				
+				<!-- Secondary headline -->
+				<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h2>Presentation Details</h2>
+							<h3 id="presentation1"><time>10:00</time>am - Accessibility for Everyone</li></h3>
+							<p><strong><a href="presenters.html#kalbag">Presenter: Laura Kalbag</a></strong></p>
+							<p>Laura gets really tired of the myth that accessible websites are ugly websites. First of all, accessibility starts with our content, and Laura will explore ways to make content more inclusive. Then, let’s look at inclusive aesthetics, and how layout, typography and color can be used to improve a site’s accessibility while also making for an attractive page. We’ll prove them wrong!</p>
+							<a class="return-link" href="#schedule">Back to top <em class="fa fa-level-up" aria-hidden="true"></em></a>
+							<hr />
+							<h3 id="presentation2"><time>11:00</time>am - Accessibility Legal Update</h3>
+							<p><strong><a href="presenters.html#feingold">Presenter: Lainey Feingold</a></strong></p>
+							<p>Not a week goes by when a digital accessibility-related lawsuit is filed against a company with an online presence and makes the news. The Winn-Dixie suit is just one example of recent legal activity.</p>
+							<p>Join us as U.S. disability rights lawyer Lainey Feingold will give an up-to-date report on what’s happening in the digital accessibility legal space, and what UX, developers, designers, quality assurance and other digital professionals need to know about what’s happening in the legal space, and a look at legal strategies helping to drive accessibility forward. She will also share success stories with the method of legal resolution that she pioneered twenty years ago, Structured Negotiation, a process that has been used as a way of resolving legal claims with collaboration and relationship building and advance accessibility. Lainey will share stories from her new book, Structured Negotiation, a Winning Alternative to Lawsuits </p>
+							<a class="return-link" href="#schedule">Back to top <em class="fa fa-level-up" aria-hidden="true"></em></a>
+							<hr />
+							<h3 id="presentation3"><time>1:00</time>pm - Assistive Technology: Beyond Screen Readers</h3>
+							<p><strong><a href="presenters.html#west">Presenter: Allen West</a></strong></p>
+							<p>Many of us are familiar with screen readers as the most popular assistive technology used by people with disabilities. But there is so much more that is used to digest our designs and applications. For this event, we're taking a look at two different assistive technologies and scenarios in which they would be used. Allen West will demonstrate a refreshable braille display, which makes what we see visually, and what would be heard via a screen reader, tactile and touchable. A refreshable braille display is a preferred method for many individuals with low to no vision, and for some with no vision or hearing, it may be their only method for interacting with the digital space.</p>
+							<a class="return-link" href="#schedule">Back to top <em class="fa fa-level-up" aria-hidden="true"></em></a>
+							<hr />
+							<h3 id="presentation4"><time>2:00</time>pm - Mobile Screen Readers 101</h3>
+							<p><strong><a href="presenters.html#joehl">Presenter: Sam Joehl</a></strong></p>
+							<p>For this meetup event, learn the basics of using a mobile screen reader. Mobile screen reader expert Sam Joehl will cover an overview of VoiceOver and TalkBack, how to navigate through user interfaces, common gestures used with each screen reader, and how to use mobile screen readers for testing. The talk will also delve into accessibility architecture and how mobile screen readers use accessibility information to present an aural UI.</p>
+							<a class="return-link" href="#schedule">Back to top <em class="fa fa-level-up" aria-hidden="true"></em></a>
+							<hr />
+							<h3 id="presentation5"><time>3:30</time>pm - Where Does User Experience & Accessibility Meet?</h3>
+							<p><strong><a href="presenters.html#doublass">Presenter: Richard Douglass</a></strong></p>
+							<p>It is very easy to lower the priority of, or forget about the user experience for People with Disabilities (PwD). Given that compliance typically dominates the focus of accessibility, where does user experience fit in? In our experience, code reviews and human evaluation can bring to light a number of accessibility concerns with a digital asset. However, only by working with PwD participants, to have them try to accomplish core tasks with these assets, can we uncover issues related to their mental model of how it should work, interaction design, etc. During this session, we will review our approach as well as highlight case study examples. In addition, we will be offering session attendees an opportunity to work hands-on with assistive technology.</p>
+							<a class="return-link" href="#schedule">Back to top <em class="fa fa-level-up" aria-hidden="true"></em></a>
+							<hr />
+							<h3 id="presentation6"><time>4:30</time>pm - Good Design Was Always Accessible</h3>
+							<p><strong><a href="presenters.html#king">Presenter: Sharlene King</a></strong></p>
+							<p>For many designers, accessibility features are a checklist after the first ideas, but the past reveals how design with the longest last impact is often the most accessible. What can we glean from the most iconic designs? How can our own work use access as a best practice instead of a burden?</p>
+							<a class="return-link" href="#schedule">Back to top <em class="fa fa-level-up" aria-hidden="true"></em></a>
+						</div>
+					</div>
+					
+
+
+			</div>
+		</div>
+
+
+
+		<!-- Footer element -->
+		<footer>
+			<div class="container">
+				<div class="row footer-one">
+					<div class="col-md-7">
+
+						<div class="row sub-links">
+							<div class="col-xs-5">
+								<ul class="list-unstyled">
+									<li><strong>Camp Info</strong></li>
+									<li><a>Accessibility Statement</a></li>
+									<li><a>Code of Conduct</a></li>
+									<li><a>Contact</a></li>
+									<li><a>FAQ</a></li>
+
+								</ul>
+							</div>
+							<div class="col-xs-5">
+								<ul class="list-unstyled">
+									<li><strong>A11YChi</strong></li>
+									<li><a href="https://www.meetup.com/a11ychi/" target="blank">Meetup</a></li>
+									<li><a href="https://twitter.com/a11ychi" target="blank">Twitter</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 text-right social mobile-left">
+						Connect:
+						<a href="https://www.meetup.com/a11ychi/" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-meetup" aria-hidden="true"></em></a>
+						<a href="https://twitter.com/a11ychi" target="blank" aria-label="Navigate to Twitter"><em class="fa fa-twitter" aria-hidden="true"></em></a>
+						<a href="https://www.facebook.com/groups/a11ychi/about/" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-facebook" aria-hidden="true"></em></a>						
+						<a href="https://www.youtube.com/channel/UCIx02QBK-IGcIlN1hGkD5Qw" target="blank" aria-label="Navigate to YouTube"><em class="fa fa-youtube" aria-hidden="true"></em></a>
+						<a href="https://www.linkedin.com/groups/8463995/profile" target="blank" aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin" aria-hidden="true"></em></a>
+						<hr />
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p>&copy; 2018 <strong>A11YChi</strong>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+	</body>
+
+</html>
