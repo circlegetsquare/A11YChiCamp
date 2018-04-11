@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-2" stroke="#999999" x="0.5" y="0.5" width="99" height="99" rx="10"></rect>
+        <text id="SPONSOR-LOGO" font-family="AvenirNextCondensed-Bold, Avenir Next Condensed" font-size="18" font-style="condensed" font-weight="bold" line-spacing="30" letter-spacing="2.99999976" fill="#999999">
+            <tspan x="6.19200083" y="38">SPONSOR</tspan>
+            <tspan x="25.4070005" y="68">LOGO</tspan>
+        </text>
+    </g>
+</svg>

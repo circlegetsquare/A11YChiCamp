@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		<!-- Base meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+		<!-- Descriptive meta -->
+		<title>A11YChi Accessibility Camp</title>
+		<meta name="title" content="max 65 character title">
+		<meta name="description" content="max 165 character description">
+		<meta name="keywords" content="comma, separated, list">
+		<meta name="author" content="author name">
+
+		<!-- CSS assets -->
+		<link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.css" rel="stylesheet">
+
+		<!-- JS assets -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/bootstrap/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="assets/js/jquery.smooth-scroll.min.js"></script>
+		<script src="assets/js/jquery.vide.min.js"></script>
+		<script src="assets/js/jquery.bgswitcher.js"></script>
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Theme specific assets -->
+		<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+		<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+		<script src="assets/js/app.js"></script>		
+
+	</head>
+
+	<body>
+
+		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">French</a></li>
+							<li><a href="#">Spanish</a></li>
+							<li><a href="#">Russian</a></li>
+						</ul>
+					</div> -->
+
+					<!-- Enable the user to adjust the font size of the web page -->
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a href="#" class="btn btn-link secondary">Accessibility</a> | </li>
+							<li><a href="#" class="btn btn-link secondary">Contact</a></li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/img/global/a11ychi-logo_bw.png" alt="Home link" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="presenters.html">Presenters</a></li>
+						<li><a href="location.html">Location</a></li>
+					</ul>
+					<div class="navbar-form navbar-right">
+						<div class="input-group">
+							<a class="btn btn-primary">Register</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="banner home-1" data-type="background" data-speed="4">
+			<div class="banner-interior">
+				<div class="container short">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center">
+							<h1>Schedule</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Begin main page content -->
+		<div class="content" id="main_content">
+			<div class="container">
+				
+				<!-- Secondary headline -->
+				<div class="row pad-top-sm pad-bottom line-bottom">
+					<div class="col-md-8 col-md-offset-2">
+						<h2>Schedule at a Glance</h2>
+						<ul class="schedule-list">
+								<li><time>9:00</time>am - <a href="#test">Registration</a></li>
+								<li><time>9:30</time>am - Welcome Address</li>
+								<li><time>10:00</time>am - Talk #1</li>
+								<li><time>11:00</time>am - Talk #2</li>
+								<li><time>12:00</time>pm - Lunch Break</li>
+								<li><time>1:00</time>pm - Talk #3</li>
+								<li><time>2:00</time>pm - Talk #4</li>
+								<li><time>3:00</time>pm - Afternoon Break</li>
+								<li><time>3:30</time>pm - Talk #5</li>
+								<li><time>4:30</time>pm - Talk #6</li>
+								<li><time>5:30</time>pm - Happy Hour and Networking</li>
+						</ul>
+						<p class="lead text-left">All sessions throughout the day will take place in the White Ballroom on the 2nd floor. Lunch will be in the cafeteria on the 3rd floor. For more details, visit the <a href="location.html">location page</a>.</p>
+					</div>
+				</div>
+				
+				<!-- Secondary headline -->
+				<div class="row pad-bottom line-bottom">
+						<div class="col-md-8 col-md-offset-2 text-center">
+							<h2 class="text-left">Detailed Schedule</h2>
+							<p class="lead text-left">With eight sessions to attend and participate in, the goal of the day is to provide an open, comfortable space for conversation and networking around digital access and inclusion. No matter who you are, we want you to walk away from this camp empowered to learn more about all things regarding digital accessibility. </p>
+							<p class="lead text-left">Sessions can cover digital accessibility topics from the web, desktop software, mobile apps, eLearning, online gaming, open source innovations, and everything in between.</p>
+						</div>
+					</div>
+					
+
+
+			</div>
+		</div>
+
+
+
+		<!-- Footer element -->
+		<footer>
+			<div class="container">
+				<div class="row footer-one">
+					<div class="col-md-7">
+
+						<div class="row sub-links">
+							<div class="col-xs-5">
+								<ul class="list-unstyled">
+									<li><strong>Camp Info</strong></li>
+									<li><a href="accessibility.html">Accessibility Statement</a></li>
+									<li><a href="codeofconduct.html">Code of Conduct</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+
+								</ul>
+							</div>
+							<div class="col-xs-5">
+								<ul class="list-unstyled">
+									<li><strong>A11YChi</strong></li>
+									<li><a href="https://www.meetup.com/a11ychi/" target="blank">Meetup</a></li>
+									<li><a href="https://twitter.com/a11ychi" target="blank">Twitter</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 text-right social mobile-left">
+						Connect:
+						<a href="https://www.meetup.com/a11ychi/" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-meetup" aria-hidden="true"></em></a>
+						<a href="https://twitter.com/a11ychi" target="blank" aria-label="Navigate to Twitter"><em class="fa fa-twitter" aria-hidden="true"></em></a>
+						<a href="https://www.facebook.com/groups/a11ychi/about/" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-facebook" aria-hidden="true"></em></a>						
+						<a href="https://www.youtube.com/channel/UCIx02QBK-IGcIlN1hGkD5Qw" target="blank" aria-label="Navigate to YouTube"><em class="fa fa-youtube" aria-hidden="true"></em></a>
+						<a href="https://www.linkedin.com/groups/8463995/profile" target="blank" aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin" aria-hidden="true"></em></a>
+						<hr />
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p>&copy; 2018 <strong>A11YChi</strong>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+	</body>
+
+</html>
