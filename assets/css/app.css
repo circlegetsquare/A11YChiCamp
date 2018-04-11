@@ -54,11 +54,26 @@ p.lead {
 	margin-bottom: 25px;
 }
 
+p.subtitle {
+	font-size: 32px;
+	margin-bottom: 25px;
+	margin-top: -15px;
+	font-weight: 400;
+}
+
 .schedule-list {
 	font-size: 24px;
 	margin-top: 15px;
 	margin-bottom: 25px;
 	list-style-type: circle;
+}
+
+th {
+	font-weight: 400;
+}
+
+th.head {
+	font-weight: 600;
 }
 cite {
 	color: #444;
@@ -81,6 +96,11 @@ a {
 
 .logo {
 	padding-top:20px;
+}
+
+.sched-time {
+	width: 200px;
+	display: inline-block;
 }
 
 /* This is a fix for alignment if ul elements are placed adjacent to floated image */
@@ -217,6 +237,7 @@ a {
 	font-size: 14px;
 	background-color: #3d3d3d;
 	color: #fff;
+	border-top: solid 1px;
 }
 .navbar-white .top-header {
 	background-color: #f5f5f5;
