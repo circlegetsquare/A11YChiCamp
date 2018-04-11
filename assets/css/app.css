@@ -38,6 +38,16 @@ h4 {
 h5 {
 	font-size: 18px;
 }
+
+h3::before { 
+	display: block; 
+	content: " "; 
+	margin-top: -150px; 
+	height: 150px; 
+	visibility: hidden; 
+	pointer-events: none;
+  }
+
 p.lead {
 	font-size: 24px;
 	margin-top: 15px;
