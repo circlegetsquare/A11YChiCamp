@@ -40,9 +40,9 @@
 	<body>
 
 		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
-		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+		<header class="navbar navbar-default navbar-fixed-top navbar-white">
 			<div class="top-header">
-				<div class="container">
+				<nav aria-label="secondary navigation" class="container">
 					
 					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
 					<div class="menu-block pull-left no-pad hidden-xs">
@@ -70,7 +70,7 @@
 					-->
 					
 					<!-- Secondary navigation and login dropdown -->
-					<div class="menu-block pull-right no-pad">
+					<div aria-label="secondary navigation" class="menu-block pull-right no-pad">
 						<ul>
 							<!-- Example secondary links -->
 							<li><a class="btn btn-link secondary">Accessibility</a> | </li>
@@ -78,7 +78,7 @@
 				        </ul>
 					</div>
 
-				</div>
+				</nav>
 			</div>
 
 			<div class="container">
@@ -97,7 +97,7 @@
 				</div>
 
 				<!-- Main site header -->
-				<div class="collapse navbar-collapse" id="top_main_navigation">
+				<nav aria-label="primary navigation" class="collapse navbar-collapse" id="top_main_navigation">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="schedule.html">Schedule</a></li>
@@ -106,7 +106,7 @@
 					</ul>
 					<div class="navbar-form navbar-right">
 						<div class="input-group">
-								<a class="btn btn-primary">Register</a>
+								<a class="btn btn-primary" role="button">Register</a>
 						</div>
 				<!-- Search
 					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
@@ -119,9 +119,9 @@
 						</div>
 					</form> -->
 					</div>
-				</div>
+				</nav>
 			</div>
-		</nav>
+		</header>
 
 		<div class="banner home-1" data-type="background" data-speed="4">
 			<div class="banner-interior">
@@ -131,7 +131,7 @@
 							<h1>A11YChi Camp 2018</h1>
 							<p class="lead subtitle">Saturday, September 8<br />
 								WeWork State Street - Chicago</p>
-							<p><a class="btn btn-primary btn-lg">Register</a></p>
+							<p><a class="btn btn-primary btn-lg" role="button">Register</a></p>
 						</div>
 					</div>
 				</div>
@@ -140,14 +140,14 @@
 
 
 		<!-- Begin main page content -->
-		<div class="content" id="main_content">
+		<main class="content" id="main_content">
 			<div class="container">
 				
 				<!-- Secondary headline -->
 				<div class="row pad-top-sm pad-bottom line-bottom">
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<h2 class="text-center">About Camp</h2>
-						<p class="lead text-left">With eight sessions to attend and participate in, we will create an open, comfortable space for conversation and networking around digital access and inclusion. No matter who you are, we want you to walk away from this camp empowered. </p>
+						<p class="lead text-left">With six sessions to attend and participate in, we will create an open, comfortable space for conversation and networking around digital access and inclusion. No matter who you are, we want you to walk away from this camp empowered. </p>
 						<p class="lead text-left">Sessions can cover digital accessibility topics from the web, desktop software, mobile apps, eLearning, online gaming, open source innovations, and everything in between.</p>
 					</div>
 				</div>
@@ -163,10 +163,10 @@
 						<div class="col-sm-4">
 								<div class="row mobile-left">
 									<div class="col-xs-5 col-sm-12 text-center">
-										<a href="presenters.html#feingold"><em class="fa fa-rounded fa-user" aria-hidden="true"></em>
+										<a href="presenters.html#feingold"><em class="fa fa-rounded fa-user" aria-hidden="true"></em></a>
 									</div>
 									<div class="col-xs-7 col-sm-12">
-										<h3>Lainey Feingold</h3></a>
+											<a href="presenters.html#feingold"><h3>Lainey Feingold</h3></a>
 										<p>Feingold is a lawyer and long-time advocate who has used her expertise and brought her passion to making the digital landscape more accessible.</p>
 									</div>
 								</div><a href="schedule.html#presentation2">Topic: Accessibility Legal Update</a>
@@ -178,10 +178,10 @@
 							
 								<div class="row mobile-left">
 									<div class="col-xs-5 col-sm-12 text-center">
-											<a href="presenters.html#kalbag"><em class="fa fa-rounded fa-user" aria-hidden="true"></em>
+											<a href="presenters.html#kalbag"><em class="fa fa-rounded fa-user" aria-hidden="true"></em></a>
 									</div>
 									<div class="col-xs-7 col-sm-12">
-											<h3>Laura Kalbag</h3></a>
+											<a href="presenters.html#kalbag"><h3>Laura Kalbag</h3></a>
 										<p>Laura gets really tired of the myth that accessible websites are ugly websites. Laura will explore ways to make content more inclusive, as well as inclusive aesethetics.</p>
 									</div>
 								</div><a href="schedule.html#presentation1">Topic: Accessibility for Everyone</a>
@@ -193,18 +193,20 @@
 						<div class="col-sm-4">
 								<div class="row mobile-left">
 									<div class="col-xs-5 col-sm-12 text-center">
-										<a href="presenters.html#king"><em class="fa fa-rounded fa-user" aria-hidden="true"></em>
+										<a href="presenters.html#king"><em class="fa fa-rounded fa-user" aria-hidden="true"></em></a>
 									</div>
 									<div class="col-xs-7 col-sm-12">
-										<h3>Sharlene King</h3></a>
-										<p>King is a designer at Morningstar, Inc. — an independent financial research firm. She focuses on accessibility, interaction and behavior design.</p>
-										
+											<a href="presenters.html#king"><h3>Sharlene King</h3></a>
+										<p>King is a designer at Morningstar, Inc. — an independent financial research firm. She focuses on accessibility, interaction and behavior design.</p>	
 									</div>
 								</div><a href="schedule.html#presentation6">Topic: Good Design Was Always Accessible</a>
 						</div>
+						<div class="col-md-12 text-center pad-top">
+							<a href="presenters.html" class="btn btn-default" role="button">View All Presenters</a>					
+						</div>
+
 
 					</div>
-
 
 								<!-- Image row NEW MARKUP 
 								<div class="row pad-bottom-sm line-bottom">
@@ -259,7 +261,6 @@
 										</div>
 									</div>-->
 			</div>
-		</div>
 
 		<div class="banner interior home-2" data-type="background" data-speed="4">
 			<div class="banner-interior">
@@ -271,13 +272,13 @@
 						<div class="col-md-4 col-md-offset-1 text-center">
 							<p class="lead">Interested in volunteering? Get involved by being an usher, hallway guide, or run sound.
 								</p>
-							<p><a class="btn btn-default btn-lg">Become a Volunteer!</a></p>
+							<p><a class="btn btn-default btn-lg" role="button">Become a Volunteer!</a></p>
 						</div>
 						<div class="col-md-2 text-center">
 							</div>
 						<div class="col-md-4 text-center">
 								<p class="lead">Interested in sponsoring A11YChi Camp 2018? We are thankful for all support and generosity.</p>
-								<p><a class="btn btn-default btn-lg">Become a Sponsor!</a></p>
+								<p><a class="btn btn-default btn-lg" role="button">Become a Sponsor!</a></p>
 						</div>
 					</div>
 				</div>
@@ -319,8 +320,9 @@
 						</div>
 					</div>		
 			
+				</div>
 			</div>
-		</div>
+		</main>
 
 		<!-- Footer element -->
 		<footer>

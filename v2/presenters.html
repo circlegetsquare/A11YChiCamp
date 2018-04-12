@@ -40,78 +40,88 @@
 	<body>
 
 		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
-		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
-			<div class="top-header">
+		<header class="navbar navbar-default navbar-fixed-top navbar-white">
+				<div class="top-header">
+					<nav aria-label="secondary navigation" class="container">
+						
+						<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+						<div class="menu-block pull-left no-pad hidden-xs">
+							<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+						</div>
+	
+						<!-- This is optional, comment out if you do not need this set of dropdowns at the top
+						<div class="dropdown pull-left">
+							<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<em class="fa fa-globe" aria-hidden="true"></em> English
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="lang_menu">
+								<li><a>English</a></li>
+								<li><a>French</a></li>
+								<li><a>Spanish</a></li>
+								<li><a>Russian</a></li>
+							</ul>
+						</div> -->
+	
+						<!-- Enable the user to adjust the font size of the web page 
+						<div class="menu-block pull-left hidden-xs">Text Size:</div>
+						<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+						<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+						-->
+						
+						<!-- Secondary navigation and login dropdown -->
+						<div aria-label="secondary navigation" class="menu-block pull-right no-pad">
+							<ul>
+								<!-- Example secondary links -->
+								<li><a class="btn btn-link secondary">Accessibility</a> | </li>
+								<li><a class="btn btn-link secondary">Contact</a></li>
+							</ul>
+						</div>
+	
+					</nav>
+				</div>
+	
 				<div class="container">
 					
-					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
-					<div class="menu-block pull-left no-pad hidden-xs">
-						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
-					</div>
-
-					<!-- This is optional, comment out if you do not need this set of dropdowns at the top
-					<div class="dropdown pull-left">
-						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						<em class="fa fa-globe" aria-hidden="true"></em> English
-						<span class="caret"></span>
+					<!-- Mobile hamburger style menu -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
 						</button>
-						<ul class="dropdown-menu" aria-labelledby="lang_menu">
-							<li><a>English</a></li>
-							<li><a>French</a></li>
-							<li><a>Spanish</a></li>
-							<li><a>Russian</a></li>
+						<a class="navbar-brand" href="index.html">
+							<img src="assets/img/global/a11ychi-logo_bw.png" alt="Home link" />
+						</a>
+					</div>
+	
+					<!-- Main site header -->
+					<nav aria-label="primary navigation" class="collapse navbar-collapse" id="top_main_navigation">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="presenters.html">Presenters</a></li>
+							<li><a>Location</a></li>
 						</ul>
-					</div> -->
-
-					<!-- Enable the user to adjust the font size of the web page
-					<div class="menu-block pull-left hidden-xs">Text Size:</div>
-					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
-					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
-					-->
-					
-					<!-- Secondary navigation and login dropdown -->
-					<div class="menu-block pull-right no-pad">
-						<ul>
-							<!-- Example secondary links -->
-							<li><a class="btn btn-link secondary">Accessibility</a> | </li>
-							<li><a class="btn btn-link secondary">Contact</a></li>
-				        </ul>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="container">
-				
-				<!-- Mobile hamburger style menu -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						<img src="assets/img/global/a11ychi-logo_bw.png" alt="Home link" />
-					</a>
-				</div>
-
-				<!-- Main site header -->
-				<div class="collapse navbar-collapse" id="top_main_navigation">
-					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="schedule.html">Schedule</a></li>
-						<li><a href="presenters.html">Presenters</a></li>
-						<li><a>Location</a></li>
-					</ul>
-					<div class="navbar-form navbar-right">
-						<div class="input-group">
-							<a class="btn btn-primary">Register</a>
+						<div class="navbar-form navbar-right">
+							<div class="input-group">
+									<a class="btn btn-primary" role="button">Register</a>
+							</div>
+					<!-- Search
+						<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
+							<div class="input-group">
+								<label for="search_main" class="hidden">Site Search</label>
+								<input type="text" class="form-control" id="search_main" placeholder="Search this site">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
+								</span>
+							</div>
+						</form> -->
 						</div>
-					</div>
+					</nav>
 				</div>
-			</div>
-		</nav>
+			</header>
 
 		<div class="banner home-1" data-type="background" data-speed="4">
 			<div class="banner-interior">
@@ -127,7 +137,7 @@
 
 
 		<!-- Begin main page content -->
-		<div class="content" id="main_content">
+		<main class="content" id="main_content">
 			<div class="container">
 				
 				<!-- Secondary headline -->
@@ -137,44 +147,44 @@
 							
 							<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
 							<h3 id="kalbag">Laura Kalbag</h3>
-							<p><a href="schedule.html#presentation1">Topic: Accessibility for Everyone - 10:00am</a></p>
-							<p>Laura Kalbag is a designer from the UK. She’s one third of <a href="http://ind.ie/">Ind.ie</a>, a tiny two-person-and-one-husky social enterprise working for social justice in the digital age. At Ind.ie, Laura follows the Ethical Design Manifesto, and works on a web privacy tool called Better. Recently Laura wrote a book for A Book Apart called <em>Accessibility For Everyone.</em></p>
+							<p><a href="schedule.html#presentation1">10:00am - Accessibility for Everyone</a></p>
+							<p><strong>Bio:</strong> Laura Kalbag is a designer from the UK. She’s one third of <a href="http://ind.ie/">Ind.ie</a>, a tiny two-person-and-one-husky social enterprise working for social justice in the digital age. At Ind.ie, Laura follows the Ethical Design Manifesto, and works on a web privacy tool called Better. Recently Laura wrote a book for A Book Apart called <em>Accessibility For Everyone.</em></p>
 							
 							<a href="http://ind.ie/" target="blank">Website: ind.ie</a>
 							<hr />
 
 							<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
 							<h3 id="feingold">Lainey Feingold</h3>
-							<p><a href="schedule.html#presentation2">Topic: Accessibility Legal Update - 11:00am</a><br /></p>
-							<p>Lainey is a lawyer and long-time advocate who has used her expertise and brought her passion to making the digital landscape more accessible.</p>
+							<p><a href="schedule.html#presentation2">11:00am - Accessibility Legal Update</a><br /></p>
+							<p><strong>Bio:</strong> Lainey is a lawyer and long-time advocate who has used her expertise and brought her passion to making the digital landscape more accessible.</p>
 							<a href="http://www.lflegal.com/" target="blank">Website: lflegal.com</a>
 							<hr />
 
 							<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
 							<h3 id="west">Allen West</h3>
-							<p><a href="schedule.html#presentation3">Topic: Assistive Technology: Beyond Screen Readers - 1:00pm</a></p>
-							<p>Allen West has been totally blind since the age of seven. He has trained people on assistive technology since 1998. Currently, he works for the Chicago Park District as a special recreation instructor and at Friedman place, Supportive Living Housing for the Blind as an assistive technology trainer. In addition, for the past ten years, Allen trains people on the technology that they will be using in their homes.</p>
+							<p><a href="schedule.html#presentation3">1:00pm - Assistive Technology: Beyond Screen Readers</a></p>
+							<p><strong>Bio:</strong> Allen West has been totally blind since the age of seven. He has trained people on assistive technology since 1998. Currently, he works for the Chicago Park District as a special recreation instructor and at Friedman place, Supportive Living Housing for the Blind as an assistive technology trainer. In addition, for the past ten years, Allen trains people on the technology that they will be using in their homes.</p>
 							
 							<hr />
 
 							<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
 							<h3 id="joehl">Sam Joehl</h3>
-							<p><a href="schedule.html#presentation4">Topic: Mobile Screen Readers 101 - 2:00pm</a></p>
-							<p>Sam Joehl brings 10 years of experience in the professional accessibility space, including four years providing direct on-site support to federal agencies, and over four years advising major telecommunications and cable providers on implementing compliance with the CVAA. Sam has an extensive holistic knowledge of assistive technologies, accessibility standards, and solutions for accessible web, mobile and software applications, electronic documents, multimedia, mobile devices and stand-alone hardware devices, and has been an advocate for accessible technology and environments through consumer advocacy organizations and grassroots accessibility groups. Sam was appointed twice to the FCC's Disability Advisory Committee (DAC) which provides advice and recommendations on a wide array of disability matters and facilitates the participation of people with disabilities in proceedings before the FCC and currently serves as co-chair of the DAC. In his free time Sam enjoys paddling with the Out of Sight Dragons, jazz, audio description and playing with new technology.</p>
+							<p><a href="schedule.html#presentation4">2:00pm - Mobile Screen Readers 101</a></p>
+							<p><strong>Bio:</strong> Sam Joehl brings 10 years of experience in the professional accessibility space, including four years providing direct on-site support to federal agencies, and over four years advising major telecommunications and cable providers on implementing compliance with the CVAA. Sam has an extensive holistic knowledge of assistive technologies, accessibility standards, and solutions for accessible web, mobile and software applications, electronic documents, multimedia, mobile devices and stand-alone hardware devices, and has been an advocate for accessible technology and environments through consumer advocacy organizations and grassroots accessibility groups. Sam was appointed twice to the FCC's Disability Advisory Committee (DAC) which provides advice and recommendations on a wide array of disability matters and facilitates the participation of people with disabilities in proceedings before the FCC and currently serves as co-chair of the DAC. In his free time Sam enjoys paddling with the Out of Sight Dragons, jazz, audio description and playing with new technology.</p>
 							
 							<hr />
 
 							<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
-							<h3 id="feingold">Richard Douglass</h3>
-							<p><a href="schedule.html#presentation5">Topic: Where Does User Experience & Accessibility Meet? - 3:30pm</a></p>
-							<p>Douglass currently serves as an User Experience (UX) Consultant with <a href="http://improvedusability.com/">Improved Usability</a>. In addition to his consulting work, he has led UX teams at Bank One (now J.P. Morgan Chase) and Nationwide Insurance. He has assisted clients both large and small. Clients include Grange Insurance, IBM, State Street Global Advisors, PwC, Duke Medical Center, Lexis Nexis, Kaiser Permanente, Razorfish, and Wendy’s.</p>
+							<h3 id="douglass">Richard Douglass</h3>
+							<p><a href="schedule.html#presentation5">3:30pm - Where Does User Experience & Accessibility Meet?</a></p>
+							<p><strong>Bio:</strong> Douglass currently serves as an User Experience (UX) Consultant with <a href="http://improvedusability.com/">Improved Usability</a>. In addition to his consulting work, he has led UX teams at Bank One (now J.P. Morgan Chase) and Nationwide Insurance. He has assisted clients both large and small. Clients include Grange Insurance, IBM, State Street Global Advisors, PwC, Duke Medical Center, Lexis Nexis, Kaiser Permanente, Razorfish, and Wendy’s.</p>
 							<a href="http://improvedusability.com/" target="blank">Website: improvedusability.com</a>
 							<hr />
 
 							<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
 							<h3 id="king">Sharlene King</h3>
-							<p><a href="schedule.html#presentation6">Topic: Good Design Was Always Accessible - 4:30pm</a></p>
-							<p>King is a designer at Morningstar, Inc. — an independent financial research firm. She focuses on accessibility, interaction and behavior design. She works with the Adler Planetarium and Chicago Public Schools to introduce kids to design and technology. She prefers tacos or pizza slices to booze. She is both a cat and dog person. 14/10.</p>
+							<p><a href="schedule.html#presentation6">4:30pm - Good Design Was Always Accessible</a></p>
+							<p><strong>Bio:</strong> King is a designer at Morningstar, Inc. — an independent financial research firm. She focuses on accessibility, interaction and behavior design. She works with the Adler Planetarium and Chicago Public Schools to introduce kids to design and technology. She prefers tacos or pizza slices to booze. She is both a cat and dog person. 14/10.</p>
 							<a href="http://tinytank.net/" target="blank">Website: tinytank.net</a>
 
 						</div>
@@ -183,7 +193,7 @@
 
 
 			</div>
-		</div>
+		</main>
 
 
 
